@@ -84,8 +84,8 @@ h3 {
     .cloud-3 {
         width: 100px; 
         position: absolute;
-         right: 250px;
-        
+        right: 250px;
+        bottom: 150px;
     }
    }
 
