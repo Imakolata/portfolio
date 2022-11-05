@@ -106,26 +106,31 @@ h3 {
     .tent {
       width: 200px; 
     }
-    .cloud-1 {
+    .cloud-1, .cloud-4 {
         width: 100px; 
-        position: absolute;
-        right: 200px;
+        position: relative;
+        right: 150px;
         top: 100px; 
       }
-    .cloud-2 {
+    .cloud-2, .cloud-5  {
         width: 100px; 
-        position: absolute;
-        left: 15.5rem;
+        position: relative;
+        left: 10rem;
         
       }
-    .cloud-3 {
+    .cloud-3, .cloud-6 {
         width: 100px; 
-        position: absolute;
-        right: 250px;
-        bottom: 150px;
+        position: relative;
+        right: 10px;
+        bottom: 200px;
     }
+     
     .avatar {
         width: 10px;
+    }
+    nav a {
+        font-size: 14px;
+        padding: 0 5px;
     }
    }
 
@@ -202,4 +207,81 @@ p small {
     color: #25716D;
 }
 
-  
+/*contact*/
+
+.contact-top-container{
+
+    background-color: #F2D7B6;
+    padding-top: 100px;
+    position: relative;
+}
+.cloud-4 {
+    position: absolute;
+    right: 300px;
+    top: 30px;
+   }
+   
+   .cloud-5 {
+       position: absolute;
+       left: 21rem;
+       top: 48px;
+   }
+   
+   .cloud-6 {
+       position: absolute;
+       right: 350px;
+       bottom: 16.5rem;
+      
+   }
+.contact-header {
+    margin: 0 ;
+}
+.form-container{
+    max-width: 400px;
+    width: 100%;
+    margin: 0 auto;
+    box-shadow: 2px 2px 5px 1px rgb(0, 0, 0, 0.2);
+}
+.form-inner {
+    padding: 30px;
+}
+.input-holder{
+    position: relative;
+    margin-bottom: 25px;
+}
+.input-text, textarea{
+    width: 100%;
+    height: 40px;
+    border: none;
+    border-bottom: 1px solid #25716D;
+    background: transparent;
+}
+.send-btn {
+    cursor: pointer;
+    border-radius: 3px;
+    padding: 15px;
+    width: 100%;
+    box-shadow: 0 3px 6px 0 rgb(0, 0, 0, 0.1);
+    border: none;
+    font-size: 1rem;
+    background: transparent;
+    transition: .2s ease;
+    color: #734124;
+}
+.send-btn:hover {
+    box-shadow: 0 3px 6px 0 rgb(0, 0, 0, 0.4);
+    color: #591e3f;
+}
+input:focus,
+textarea:focus{
+ outline: 0;
+ border-bottom: 2px solid #591E3F;
+}
+
+input:focus ~ .label,
+textarea:focus ~ .label{
+    position: absolute;
+    top: -10px;
+    left: 0;
+    font-size: 0.8rem;
+}
